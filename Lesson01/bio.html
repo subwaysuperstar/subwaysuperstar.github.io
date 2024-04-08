@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY@SUPERSTAR</title>
+    </head>
+    
+<style>
+    Body{
+        font-family: "ms ui gothic";
+        padding: 10px;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0px;
+        background-image:url(assets/StarsSlowed.gif),linear-gradient(#79addc, #C2bbf0);
+        background-size: cover;
+        background-blend-mode: screen;
+        background-attachment: fixed;
+    }
+    #index{
+        width: 900px;
+        height: auto;
+        align-content: center;
+    }
+    .headdiv{
+        width: 100%;
+        height: 150px;
+        padding: 0px;
+        display: flex;
+        vertical-align: top;
+        margin: 0px;
+        align-content: center;
+    }
+    .headcont1{
+        width: 700px;
+        height: 100px;
+        padding: 0px;
+        vertical-align: top;
+        display: block;
+        position: relative;
+        left: 0px;
+        padding-bottom: 0px;
+        margin-right: 2px;
+    }
+    .headimg{
+        height: 100px;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: block;
+        position: relative;
+        left: 240px;
+        z-index: 10001;
+        top: 65px;
+    }
+    .stardiv{
+        height: 180px;
+        display: block;
+        position: relative;
+        left: 240px;
+        z-index: ;
+        bottom: 160px;
+        bottom: 100px;
+    }
+    .returnimg{
+        margin-left: 0px;
+        margin-right: 0px;
+        display: block;
+        position: relative;
+        left: 0px;
+    }
+    .top{
+        width: 100%;
+        padding-top: 7px;
+        display: flex;
+        vertical-align: top;
+        margin: 0px;
+    }
+    .sidecont{
+        width: 300px;
+        height: 600px;
+        vertical-align: top;
+        overflow: hidden;
+        align-content: center;
+        padding-right: 4px;
+    }
+    .ipod{
+        width: 280px;
+        height: 582px;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: 0px;
+        margin-right: 3px;
+        align-content: center;
+        align-items: center;
+        bottom: 40px;
+    }
+    .ipodimg{
+        width: 280px;
+        height: auto;
+        position: relative;
+        vertical-align: top;
+        margin: 0px;
+        display: flex;
+        z-index: 999;
+        float: left;
+    }
+    .ipodgif{
+        width: 190.5px;
+        height: auto;
+        position: relative;
+        vertical-align: top;
+        margin: 0px;
+        display: flex;
+        z-index: 1000;
+        top: 300px;
+        right: .5px;
+        top: 290px;
+    }
+    .maincontbody{
+        width: 550px;
+        height: 430.5px;
+        position: relative;
+        vertical-align: top;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        border: 8px ridge #e3b4c6;
+        border-radius: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        align-content: center;
+        text-align: left;
+        background-image: url(Assets/textbgo.jpeg);
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-position: left;
+        
+    }
+    .mainbody{
+        width: 300px;
+        height: auto;
+        position: relative;
+        vertical-align: top;
+    }
+    .welcome{
+        width: 80%;
+        height: 60px;
+        position: sticky;
+        vertical-align: top;
+        overflow: hidden;
+        border-top: 6px groove #fac61b;
+        border-right: 6px ridge #fac61b;
+        border-bottom: 6px ridge #fac61b;
+        border-radius: 0px 30px 30px 0px;
+        background-image: url(Assets/dither_it_rita1v2.png);
+        background-size: cover;
+        padding-top: 0px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        top: -11px;
+        z-index: 1000;
+    }
+    .welcomeimg{
+        width: 415px;
+        position: relative;
+        vertical-align: top;
+        padding: 0px;
+        margin: 0px;
+        display: block;
+        z-index: 69;
+        left: 10px;
+        top: 9px;
+    }
+    .welcomegirl{
+        width: auto;
+        height: 180px;
+        position: relative;
+        vertical-align: top;
+        padding-left: 11px;
+        padding-right: 8px;
+        margin: 0px;
+        display: flex;
+        z-index: 999;
+        float: left;
+        top: 60px;
+    }
+    .mainbodytxt{
+        text-align: left;
+        width: 375px;
+        height: auto;
+        font-size: 15px;
+        line-height: 15px;
+        color: cornflowerblue;
+        position: relative;
+        vertical-align: top;
+        padding-left: 5px;
+        margin: 0px;
+        display: flex;
+        top: 50px;
+        text-shadow: 0 0 10px white;
+    }
+    .moretocome{
+       width: 210px;
+        position: relative;
+        vertical-align: top;
+        padding: 0px;
+        margin: 0px;
+        display: block;
+        z-index: 69;
+        left: 10px;
+    }
+    .whatisthis{
+        width: 45%;
+        height: 35px;
+        position: relative;
+        vertical-align: top;
+        overflow: hidden;
+        border-top: 6px groove #7c5cb4;
+        border-right: 6px ridge #7c5cb4;
+        border-bottom: 6px ridge #7c5cb4;
+        border-radius: 0px 30px 30px 0px;
+        background-image: url(Assets/gentyfinal.png);
+        background-size: cover;
+        background-position: center; 
+        padding-top: 0px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        align-content: center;
+        top: 35px;
+    }
+    .whatisthistxt{
+        text-align: left;
+        width: auto;
+        height: auto;
+        font-size: 15px;
+        line-height: 15px;
+        color: cornflowerblue;
+        position: relative;
+        vertical-align: top;
+        padding: 0px 0px 0px 8px;
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        text-shadow: 0 0 10px white; 
+        top: 20px;
+    }
+    .minky{
+        width: auto;
+        height: 160px;
+        position: relative;
+        vertical-align: top;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        z-index: 40;
+        float: right;
+        top: 20px;
+    }
+    .midcont1{
+        width: 490px;
+        height: 100%;
+        vertical-align: top;
+        margin-right: 3px;
+        align-content: center;
+        overflow: hidden;
+        
+    }
+    .midcont2{
+        width: 337px;
+        display: flex;
+        position: relative;
+        vertical-align: top;
+    }
+    .stickers2{
+        width: 570px;
+        height: 110px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 3px;
+        padding-top: 0px;
+        margin-top: 5px;
+    }
+    .sophysticker{
+        width: 295px;
+        position: relative;
+        z-index: 60;
+        bottom: 530px;
+        right: -505px;
+        padding: 0px;
+        margin: 0px;
+    }
+    </style>
+    
+<body>
+    <center>
+        <div id="index">
+            <div class="headdiv">
+                <div class="headcont1">
+                    <img src="assets/SubwayTTW.png" class="headimg">
+                    <img src="assets/bg_nav_pc.png" class="stardiv">
+                </div>
+            </div>
+            <div class="top">
+                <div class="sidecont">
+                    <div class="ipod">
+                        <img src="assets/ipodgallery.gif" class="ipodgif">
+                        <img src="assets/ipod.png" class="ipodimg">
+                    </div>
+                </div>
+                <div class="mainbody">
+                    <div class="maincontbody">
+                        <div class="welcome">
+                            <img src="Assets/GeetingsTx.png" class="welcomeimg">
+                        </div>
+                        <img src="Assets/girl25-1.gif" class="welcomegirl">
+                        <div class="mainbodytxt">
+                            <p>HELLO WORLLD!!!!! <br>
+                                I'm Natalia, and this is my first time taking a web design class. That fact might be very obvious though. I've wanted to learn how to make my own websites for quite a while now, but I never really knew where to start. It's kind ofbeen a daunting experience to do thus first assignment, but it has been really fun so far!! This bio page is actually modeled with the aesthetics of mid-2010s pripara in mind. It was one of my favorite shows growing up, and I wanted to pay homage to that. I also just really like the designs of their sites. I really enjoy cutesy things, and I really wanted to show that for my first assignment!
+                            </p>
+                        </div>
+                        <div class="whatisthis">
+                            <img src="assets/MTCimg.png" class="moretocome">
+                        </div>
+                        <div class="whatisthistxt">
+                            <p> As for some information about myself, I'm an agriculture major! I'm graduating next year and hope to attend a UC to further my education! My hobbies mostly include writing letters to send to my penpals (one in china and one in canada), archiving discographies of indie bands from across the world, drawing, playing video games on my 3DS, and watching TV, haha! <br>
+                            I was actually hoping the skill set could be the entryway for me to eventually make my own website dedicated to my hobbies. I see that a lot of people on Neocities have them, so I thought it would be fun to do something similiar! Anyways, I hope to keep improving this site itself. Also, i didn't know github would force me to make my username into my site's name, but I figured I should just keep it...
+                            </p>
+                            <img src="Assets/himinky.png" class="minky">
+                        </div>
+                    </div>
+                    <div class="stickers2">
+                    <marquee scrollamount="4">
+                        <img src="Assets/LalaHeart.png" style="height: 110px;">
+                        <img src="Assets/BsfSticker.png" style="height: 110px">
+                        <img src="Assets/MireiGreen.png" style="height: 110px">
+                        <img src="Assets/CherrySticker.png" style="height: 110px">
+                        <img src="Assets/SophyBlue.png" style="height: 110px">
+                        <img src="Assets/MireiHeart.png" style="height: 110px">
+                        <img src="Assets/LalaPurple.png" style="height: 110px">
+                        <img src="Assets/StarSticker.png" style=" height: 110px">
+                        <img src="Assets/SophyPink.png" style="height: 110px">
+                    </marquee>
+                    </div>
+                </div>
+            </div>
+            <img src="Assets/SophyMainGlow.png" class="sophysticker">
+        </div>
+    </center>
+</body>
